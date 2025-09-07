@@ -1,5 +1,6 @@
 package com.windy.modid;
 
+import com.windy.modid.item.ModItem;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItem.registerItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
